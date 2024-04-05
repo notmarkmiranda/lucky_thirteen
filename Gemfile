@@ -17,7 +17,9 @@ gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[windows jruby]
 
 group :development, :test do
+  gem "factory_bot_rails"
   gem "pry" # Better console
+  gem "rspec-rails","~> 6.1.0"
   gem "standard" # Linting
   gem "standard-rails" # Linting
 end
