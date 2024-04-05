@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   root "pages#index"
 
   get "/dashboard", to: "users#show", as: "dashboard"
+
+  resources :leagues, only: [:new, :create, :show]
 end
