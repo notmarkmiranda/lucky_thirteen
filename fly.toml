@@ -1,16 +1,13 @@
-# fly.toml app configuration file generated for lucky-thirteen-purple-butterfly-8471 on 2024-04-04T18:50:26-06:00
+# fly.toml app configuration file generated for leagues on 2024-04-05T06:00:20-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'lucky-thirteen-purple-butterfly-8471'
+app = 'leagues'
 primary_region = 'sea'
 console_command = '/rails/bin/rails console'
 
 [build]
-
-[deploy]
-  release_command = './bin/rails db:prepare'
 
 [http_service]
   internal_port = 3000
@@ -39,7 +36,3 @@ console_command = '/rails/bin/rails console'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-
-[[statics]]
-  guest_path = '/rails/public'
-  url_prefix = '/'
